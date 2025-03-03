@@ -7,32 +7,33 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	 <form method="post">
 
+	<form method="post">
+        <!-- Name Field (Required) -->
         <label for="name">Name:*</label>
         <input type="text" name="name" id="name" required>
         <br><br>
 
+        <!-- Email Field (Required) -->
         <label for="email">Email:*</label>
         <input type="email" name="email" id="email" required>
         <br><br>
 
-        
-        
-        <input type="radio" name="gender" id="male" required>
+        <!-- Gender Field (Radio Buttons, Required) -->
+        <label>Gender:* </label>
+        <input type="radio" name="gender" id="male" value="male" required>
         <label for="male">Male</label>
 
-        <input type="radio" name="gender" id="female" required>
+        <input type="radio" name="gender" id="female" value="female" required>
         <label for="female">Female</label>
 
-        <input type="radio" name="gender" id="other" required>
+        <input type="radio" name="gender" id="other" value="other" required>
         <label for="other">Other</label>
         <br><br>
-        
 
+        <!-- Laptop Brands Dropdown -->
         <label for="laptop">Laptop Brands: </label>
-        <select id="laptop" name="laptop">
+        <select id="laptop" name="laptop" required>
             <option value="">Select a brand</option>
             <option value="apple">Apple</option>
             <option value="asus">Asus</option>
@@ -40,26 +41,31 @@
         </select>
         <br><br>
 
+        <!-- Age Field (Required) -->
         <label for="age">Age:*</label>
         <input type="number" name="age" id="age" required>
         <br><br>
 
+        <!-- Date of Birth Field (Required) -->
         <label for="dob">Date of Birth:*</label>
         <input type="date" name="dob" id="dob" required>
         <br><br>
 
+        <!-- Password Field (Required) -->
         <label for="password">Password:*</label>
         <input type="password" name="password" id="password" required>
         <br><br>
 
+        <!-- Portfolio URL Field (Optional) -->
         <label for="portfolio">Portfolio URL:</label>
         <input type="url" name="portfolio" id="portfolio">
         <br><br>
 
-        <button>Submit</button>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
     </form>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
 
